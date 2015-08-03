@@ -130,4 +130,4 @@ echo "You can start by command 'nginx-start'"
 echo "======================================"
 echo ""
 
-# >>>>>>>>>> START <<<<<<<<<<<
+# >>>>>>>>>> END <<<<<<<<<<<
