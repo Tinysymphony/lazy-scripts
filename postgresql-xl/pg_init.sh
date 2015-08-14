@@ -90,6 +90,8 @@ su $user -c "initdb -D $dn_path --nodename 'pg_dn'$num"
 su $user -c "initdb -D $ds_path --nodename 'pg_ds'$num"
 su $user -c "initdb -D $cd_path --nodename 'pg_cd'$num"
 
+su $user -c "kill `pidof postgres`"
+
 sed -i "s/#listen_addresses = 'localhost'/listen_addresses = '*'/g" $dn_conf $ds_conf $cd_conf
 sed -i "s/#gtm_host = 'localhost'/gtm_host = $gtm_host/g" $dn_conf $ds_conf $cd_conf
 sed -i "s/#gtm_port = 6666/gtm_port = $gtm_port/g" $dn_conf $ds_conf $cd_conf
