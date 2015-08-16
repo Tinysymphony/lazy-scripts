@@ -14,8 +14,8 @@ nohup postgres -D /data/pg_cluster/coordinator --datanode > $HOME/wytiny/log/coo
 sleep 2s
 
 #initialize all of them
-psql -d postgres -p 7000 -f pg_register.sql
+psql -d postgres -h 127.0.0.1 -p 7000 -f pg_register.sql
 sleep 1s
-psql -d postgres -p 7002 -f pg_register.sql
+psql -d postgres -p 127.0.0.1 -p 7002 -f pg_register.sql
 sleep 1s
 
