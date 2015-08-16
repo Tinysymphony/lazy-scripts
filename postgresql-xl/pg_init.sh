@@ -7,6 +7,8 @@ echo "= Blog: www.wytiny.me"
 echo "==================================="
 echo ""
 
+# for postgresql-9.1
+
 function die {
     echo "ERROR: $1" > /dev/null 1>&2
     exit 1

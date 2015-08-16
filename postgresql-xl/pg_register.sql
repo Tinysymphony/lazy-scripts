@@ -1,8 +1,14 @@
-drop node pg_dn7
-drop node pg_dn8
-drop node pg_dn10
-drop node pg_dn11
-drop node pg_dn12
+drop node pg_dn7;
+drop node pg_dn8;
+drop node pg_dn10;
+drop node pg_dn11;
+drop node pg_dn12;
+
+drop node pg_cd7;
+drop node pg_cd8;
+drop node pg_cd10;
+drop node pg_cd11;
+drop node pg_cd12;
 
 drop node group gp7;
 drop node group gp8;
