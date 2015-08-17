@@ -71,8 +71,8 @@ dn_hba=$dn_path"/pg_hba.conf"
 ds_hba=$ds_path"/pg_hba.conf"
 cd_hba=$cd_path"/pg_hba.conf"
 
-gtm_host="vag-node9"
-gtm_port=8000
+gtm_host="'192.168.1.109'"
+gtm_port=8001
 dn_port=7000
 ds_port=7001
 cd_port=7002
